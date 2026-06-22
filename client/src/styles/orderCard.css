@@ -1,0 +1,41 @@
+.order-card {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #111;
+  color: #fff;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.order-card-buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 8px;
+}
+
+.order-card button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.order-card button:hover {
+  opacity: 0.8;
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}

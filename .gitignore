@@ -1,0 +1,83 @@
+# ==========================================
+# Logs e Logs de Sistema
+# ==========================================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==========================================
+# Dependências (Node e Build Nativo)
+# ==========================================
+node_modules/
+dist-electron/
+/dist
+/build
+/out
+
+# Ignorar binários gerados pelo node-gyp (comum no better-sqlite3)
+bin/
+build/Debug/
+build/Release/
+
+# ==========================================
+# Banco de Dados (Better SQLite3)
+# ==========================================
+# Ignora arquivos de banco de dados locais para não vazar dados de teste
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.lock
+
+# Se você usa um diretório específico para dados locais na raiz:
+# /data/
+
+# ==========================================
+# Variáveis de Ambiente e Segredos
+# ==========================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignorar chaves de assinatura do Electron (caso use para build final)
+*.mac.gpg
+*.key
+*.cert
+*.pfx
+*.p12
+
+# ==========================================
+# Ferramentas de Desenvolvimento e IDEs
+# ==========================================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# Testes e Cobertura
+# ==========================================
+/coverage
+.nyc_output
+
+# ==========================================
+# TypeScript e Vite
+# ==========================================
+*.tsbuildinfo
+.vite/
